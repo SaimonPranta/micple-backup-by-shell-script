@@ -1,15 +1,14 @@
 #!/bin/bash
 
 # === CONFIGURATION ===
-SOURCE_REMOTE_USER="root@micple.com" 
+REMOTE_USER="root@micple.com"
 DEST_ROOT_FOLDER="/var/micple.com/backup"
 
-
-MEDIA_SOURCE_DIR="${REMOTE_USER}:/var/micple.com/default.imp/storage.imp”
+MEDIA_SOURCE_DIR="${REMOTE_USER}:/var/micple.com/default.imp/storage.imp"
 MEDIA_DEST_DIR="${DEST_ROOT_FOLDER}/media"
 
-DB_SOURCE_DIR="${REMOTE_USER}:/var/lib/mongodb”
-DB_DEST_DIR="${DEST_ROOT_FOLDER}/db”
+DB_SOURCE_DIR="${REMOTE_USER}:/var/lib/mongodb"
+DB_DEST_DIR="${DEST_ROOT_FOLDER}/db"
 
 # Create destination if it doesn't exist 
 mkdir -p "$MEDIA_DEST_DIR"
